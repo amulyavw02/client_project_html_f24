@@ -8,20 +8,20 @@
         <title>Student Success Portal</title>
     </head>
     <body>
-       <div class="skip"><a href="#main">Skip to Main Content</a></div> 
         <header>
+            <a class="skip" href="#main">Skip to Main Content</a>
             <div class="logo">
                 <img class="m_logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg"
                 alt="UMSI Logo">
             </div>
-            <nav class="nav_grid">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="cew.html">Center for Education of Women</a></li>
-                    <li><a href="maizeandblue.html">Maize and Blue Cupboard</a></li>
-                    <li><a href="firstgen.html">First Generation</a></li>
-                </ul>
-            </nav>
+                <nav class="nav_grid">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="cew.html">Center for Education of Women</a></li>
+                        <li><a href="maizeandblue.html">Maize and Blue Cupboard</a></li>
+                        <li><a href="firstgen.html">First Generation</a></li>
+                    </ul>
+                </nav>
             <h1>Student Success Portal</h1>
 
         </header>
@@ -124,13 +124,38 @@
                     </li>
                 </ul>
             </section>
+            <h2>Contact Us for More Information or Support</h2>
+                <form action="https://formspree.io/f/mvgozegg" method="POST">
+                    <fieldset>
+                    <legend>Contact Us for More Information or Support</legend>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Your first name">
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Your last name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address">
+
+                    <label for="program">Program of Study</label>
+                    <input type="text" id="program" name="program" required placeholder="Program you're enrolled in">
+
+                    <label for="inquiry">How can we help you?</label>
+                    <textarea id="inquiry" name="inquiry" rows="4" placeholder="Please describe how we can assist you"></textarea>
+
+                    <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
         </main>
         <footer class="footer">
             <p>MSI Academic Advising | <a
                     href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
-                    Academic Advising </a></p>
+                    Academic Advising </a> | © Copyrights <span id="year"></span> </p>
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>

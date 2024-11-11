@@ -8,8 +8,8 @@
         <title>First Generation</title>
     </head>
     <body>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <header>
+            <a class="skip" href="#main">Skip to Main Content</a>
             <div class="logo">
                 <img class="m_logo"
                     src="images/UMSI_signature_vertical_informal_solidblue.jpg"
@@ -96,11 +96,63 @@
                     </li>
                 </ul>
             </section>
+
+            <form action="https://formspree.io/f/mvgozegg" method="POST">
+                <fieldset>
+                    <legend>Get in Touch</legend>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name"
+                        placeholder="Your first name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name"
+                        placeholder="Your last name" required>
+
+                    <label for="program">Program</label>
+                    <input type="text" id="program" name="program"
+                        placeholder="Program enrolled in">
+
+                        <p>First Generation Resources you are interested in</p>
+                        <label for="firstgen-mentorship">
+                            <input type="checkbox" id="firstgen-mentorship" name="firstgen_resources" value="Mentorship">
+                            First Gen Mentorship Programs
+                        </label><br>
+                        
+                        <label for="firstgen-scholarships">
+                            <input type="checkbox" id="firstgen-scholarships" name="firstgen_resources" value="Scholarships">
+                            First Gen Scholarships
+                        </label><br>
+                        
+                        <label for="firstgen-workshops">
+                            <input type="checkbox" id="firstgen-workshops" name="firstgen_resources" value="Workshops">
+                            First Gen Workshops
+                        </label><br>
+                        
+                        <label for="firstgen-career">
+                            <input type="checkbox" id="firstgen-career" name="firstgen_resources" value="Career Services">
+                            First Gen Career Services
+                        </label><br>
+                        
+                        <label for="firstgen-peer-support">
+                            <input type="checkbox" id="firstgen-peer-support" name="firstgen_resources" value="Peer Support">
+                            First Gen Peer Support Programs
+                        </label><br>
+
+                    <label for="message">Additional Comments</label>
+                    <textarea name="message" id="message" rows="5"
+                        placeholder="Let us know how we can help"></textarea>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
         </main>
         <footer class="footer">
             <p>MSI Academic Advising | <a
                     href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
-                    Academic Advising </a></p>
+                    Academic Advising </a> | © Copyrights <span id="year"></span> </p>
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
