@@ -47,7 +47,7 @@ p {
 }
 
 .desc_images img{
-    width: 100%; /* Ensures the image is responsive */
+    width: 100%; 
     height: auto;
     border-radius: 8px;
 }
@@ -146,13 +146,13 @@ ol{
 }
 /* Form styling */
 form {
-    background-color: #fdf9ec; /* White background for minimal look */
+    background-color: #fdf9ec; 
     padding: 30px;
     font-size: 16px;
     max-width: 600px;
     border-radius: 8px;
     border: 1px solid #e7e7e7;
-    color: #333; /* Subtle text color */
+    color: #333; 
     margin: 20px 0;
 }
 
@@ -197,7 +197,7 @@ input[type="checkbox"] {
     margin: 5px 0;
 }
 input[type="submit"] {
-    background-color: #FFCB05; /* Michigan Yellow */
+    background-color: #FFCB05;
     color: #00274C;
     border: none;
     padding: 12px;
@@ -213,7 +213,7 @@ select {
     border-radius: 4px;
     background-color: #fff;
     width: 200px;
-    appearance: auto; /* Use the default arrow */
+    appearance: auto; 
   -webkit-appearance: auto; /* Ensures the default appearance on WebKit browsers */
   -moz-appearance: auto;
   }
@@ -233,7 +233,7 @@ input[type="submit"]:hover {
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resize for user convenience */
+    resize: vertical; 
 }
 /* 404 page */
 .error-container {
@@ -259,7 +259,7 @@ textarea {
 
 .error-image img {
     width: 100%;
-    max-width: 300px; /* Adjust based on your preference */
+    max-width: 300px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -305,10 +305,10 @@ textarea {
         padding-bottom: 10px;
     }
     .card-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-columns: repeat(3, 1fr); 
     }
     .card:hover {
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
     }
     form {
         max-width: 800px;
